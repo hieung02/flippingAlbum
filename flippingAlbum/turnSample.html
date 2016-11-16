@@ -1,0 +1,104 @@
+<section id="section-getting-started">
+    <p class="headline"><b>Turn.js</b> is a JavaScript library that will make your content look like a real book or magazine using all the advantages of HTML5. The web is getting beautiful with new user interfaces based in HTML5; turn.js is the best fit for a magazine, book or catalog based in HTML5.</p>
+    <p>
+        <!--googleoff: all-->
+    </p>
+    <div class="simple-sample">
+
+        <h3>Let's code</h3>
+        <div class="code">
+            <pre><span class="tag">&lt;div id=<span class="string">"flipbook"</span>&gt;</span>
+    <span class="tag">&lt;div class=<span class="string">"hard"</span>&gt;</span> <span class="text">Turn.js</span> <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div class=<span class="string">"hard"</span>&gt;&lt;/div&gt;</span>
+    <span class="tag">&lt;div&gt;</span> <span class="text">Page 1</span> <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div&gt;</span> <span class="text">Page 2</span> <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div&gt;</span> <span class="text">Page 3</span> <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div&gt;</span> Page 4 <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div class=<span class="string">"hard"</span>&gt;&lt;/div&gt;</span>
+    <span class="tag">&lt;div class=<span class="string">"hard"</span>&gt;&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+</pre>
+
+            <pre><span class="script">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span>
+    $(<span class="string">"#flipbook"</span>).turn({
+        width: <span class="number">400</span>,
+        height: <span class="number">300</span>,
+        autoCenter: <span class="string">true</span>
+    });
+<span class="script">&lt;/script&gt;</span>
+</pre>
+        </div>
+
+        <div class="sample" id="sample-viewer">
+            <a style="display: none;">Run code</a>
+            <div style="margin: auto; width: 400px; height: 300px;">
+                <div class="sample-flipbook" style="position: relative; width: 400px; height: 300px; margin-left: -100px;">
+                    <div class="page-wrapper" page="1" style="position: absolute; overflow: visible; width: 200px; height: 300px; top: 0px; right: 0px; left: auto; z-index: 8; perspective-origin: 0% 50%;">
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 17; transform-style: preserve-3d; backface-visibility: hidden; width: 200px; height: 300px; transform-origin: 0% 50% 0px;">
+                            <div class="hard page p1 odd" style="float: left; width: 200px; height: 300px;"> Turn.js </div>
+                        </div>
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 16; transform-style: preserve-3d; backface-visibility: hidden; width: 200px; height: 300px; transform-origin: 100% 50% 0px; transform: translateX(-200px) rotateY(180deg); display: none;">
+                            <div class="hard page p2 even" style="float: left; width: 200px; height: 300px;"></div>
+                        </div>
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 200px; height: 300px; background-color: rgba(0, 0, 0, 0.498039); transform: rotateY(0deg); display: none;"></div>
+                    </div>
+                    <div class="page-wrapper" page="2" style="position: absolute; overflow: hidden; width: 200px; height: 300px; top: 0px; left: 0px; right: auto; z-index: 0; display: none;">
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 2; transform-style: preserve-3d; backface-visibility: hidden; width: 200px; height: 300px;"></div>
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; transform-style: preserve-3d; backface-visibility: hidden; width: 200px; height: 300px;"></div>
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; display: none; width: 200px; height: 300px;"></div>
+                    </div>
+                    <div class="page-wrapper" page="3" style="position: absolute; overflow: hidden; width: 200px; height: 300px; top: 0px; right: 0px; left: auto; z-index: 7;">
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 361px; height: 361px;">
+                            <div class="page p3 odd" style="float: left; width: 200px; height: 300px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto;">Page 1</div>
+                        </div>
+                        <div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 200px; height: 300px;"></div>
+                    </div>
+                    <div style="pointer-events: none; display: none; position: absolute; top: -1039px; left: -400px; overflow: visible; z-index: auto;">
+                        <div style="position: absolute; top: 1039px; left: 600px; overflow: hidden; z-index: 7; display: none; width: 361px; height: 361px;">
+                            <div style="position: absolute; top: 0px; left: 0px; overflow: visible; z-index: auto; cursor: default; width: 200px; height: 300px;">
+                                <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 200px; height: 300px;"></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 1039px; left: 500px; overflow: hidden; z-index: 0; display: none; width: 361px; height: 361px;">
+                            <div style="position: absolute; top: 0px; left: 0px; overflow: visible; z-index: auto; cursor: default; width: 200px; height: 300px;">
+                                <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 200px; height: 300px;"></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 1039px; left: 700px; overflow: hidden; z-index: 0; display: none; width: 361px; height: 361px;">
+                            <div style="position: absolute; top: 0px; left: 0px; overflow: visible; z-index: auto; cursor: default; width: 200px; height: 300px;">
+                                <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 200px; height: 300px;"></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 1039px; left: 500px; overflow: hidden; z-index: 0; display: none; width: 361px; height: 361px;">
+                            <div style="position: absolute; top: 0px; left: 0px; overflow: visible; z-index: auto; cursor: default; width: 200px; height: 300px;">
+                                <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 200px; height: 300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-wrapper" page="4" style="position: absolute; overflow: hidden; width: 200px; height: 300px; top: 0px; left: 0px; right: auto; z-index: 0; display: none;">
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 361px; height: 361px;">
+                            <div class="page p4 even" style="float: left; width: 200px; height: 300px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto;">Page 2</div>
+                        </div>
+                        <div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 200px; height: 300px;"></div>
+                    </div>
+                    <div class="page-wrapper" page="5" style="position: absolute; overflow: hidden; width: 200px; height: 300px; top: 0px; right: 0px; left: auto; z-index: 0; display: none;">
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 361px; height: 361px;">
+                            <div class="page p5 odd" style="float: left; width: 200px; height: 300px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto;">Page 3</div>
+                        </div>
+                        <div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 200px; height: 300px;"></div>
+                    </div>
+                    <div class="page-wrapper" page="6" style="position: absolute; overflow: hidden; width: 200px; height: 300px; top: 0px; left: 0px; right: auto; z-index: 0; display: none;">
+                        <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 361px; height: 361px;">
+                            <div class="page p6 even" style="float: left; width: 200px; height: 300px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto;">Page 4</div>
+                        </div>
+                        <div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 200px; height: 300px;"></div>
+                    </div>
+                    <div class="shadow" style="position: absolute; top: 0px; left: 200px; overflow: hidden; z-index: auto; width: 200px; height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--googleon: all-->
+</section>
