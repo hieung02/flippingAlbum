@@ -1,2 +1,0 @@
-# flippingAlbum
-Photo Album
